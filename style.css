@@ -1,0 +1,159 @@
+body {
+    font-family: Courier, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0; /* เพิ่ม padding ด้านบนและด้านล่างของ header */
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับ header */
+  }
+
+  header .container {
+    padding: 0 20px; /* เพิ่ม padding ด้านซ้ายและด้านขวาของ container */
+  }
+
+  nav ul {
+    margin: 0; /* ลบ margin ของ navigation ul */
+    padding: 0;
+  }
+
+  nav ul li {
+    color: #000;
+    
+    margin-right: 10px;
+  }
+
+  nav ul li:last-child {
+    margin-right: 0; /* ลบ margin ของ navigation li ที่สุดท้าย */
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .left-column, .right-column {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Media queries for Mobile */
+  @media only screen and (max-width: 767px) {
+    header .container {
+      padding: 0; /* ลบ padding ของ container ภายใน header */
+    }
+
+    nav ul {
+      text-align: center; /* จัดข้อความใน navigation links ตรงกลาง */
+      margin-top: 10px; /* เพิ่ม margin ด้านบนสำหรับ navigation links */
+    }
+
+    nav ul li {
+      display: block; /* แสดง navigation links เป็น block elements */
+      margin: 0 auto 10px; /* เพิ่ม margin ให้กับแต่ละ navigation link */
+    }
+
+    main {
+      flex-direction: column; /* แสดงเนื้อหาหลักเป็นแนวตั้ง */
+    }
+
+    .left-column, .right-column {
+      flex: 1; /* ทำให้ left และ right columns ใช้พื้นที่เต็มทั้งหมด */
+    }
+
+    .right-column {
+      margin-top: 20px; /* เพิ่ม margin ด้านบนสำหรับ right column */
+    }
+
+    footer .container {
+      padding: 0; /* ลบ padding ของ container ภายใน footer */
+    }
+  }
+
+  /* Media queries for Tablet */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    header .container, footer .container {
+      padding: 0 15px; /* เพิ่ม padding ด้านซ้ายและด้านขวาของ container ภายใน header และ footer */
+    }
+
+    nav ul {
+      text-align: center; /* จัดข้อความใน navigation links ตรงกลาง */
+    }
+
+    nav ul li {
+      display: inline-block; /* แสดง navigation links เป็น inline-block elements */
+      margin: 0 10px; /* เพิ่ม margin ให้กับแต่ละ navigation link */
+    }
+
+    main {
+      padding: 20px; /* เพิ่ม padding ให้กับเนื้อหาหลัก */
+    }
+
+    .left-column, .right-column {
+      flex: 1; /* ทำให้ left และ right columns ใช้พื้นที่เท่ากัน */
+    }
+
+    .right-column {
+      margin-top: 20px; /* เพิ่ม margin ด้านบนสำหรับ right column */
+    }
+  }
+
+  /* Media queries for Desktop */
+  @media only screen and (min-width: 992px) {
+    header .container, footer .container {
+      padding: 0 20px; /* เพิ่ม padding ด้านซ้ายและด้านขวาของ container ภายใน header และ footer */
+    }
+
+    nav ul {
+      text-align: left; /* จัดข้อความใน navigation links ไปทางซ้าย */
+    }
+
+    nav ul li {
+      display: inline; /* แสดง navigation links เป็น inline elements */
+      margin-right: 10px; /* เพิ่ม margin ให้กับแต่ละ navigation link */
+    }
+
+    nav ul li:last-child {
+      margin-right: 0; /* ลบ margin ของ navigation link สุดท้าย */
+    }
+
+    main {
+      padding: 20px; /* เพิ่ม padding ให้กับเนื้อหาหลัก */
+      display: flex; /* ใช้เลย์เอ้าท์ flexbox สำหรับเนื้อหาหลัก */
+      justify-content: space-between; /* กระจาย left และ right columns ทั้งสองออกไปทางด้านซ้ายและด้านขวา */
+    }
+
+    .left-column, .right-column {
+      flex: 0 0 calc(50% - 20px); /* ทำให้ left และ right columns ใช้พื้นที่ครึ่งหนึ่ง */
+    }
+
+    .right-column {
+      margin-top: 0; /* ลบ margin ด้านบนสำหรับ right column */
+    }
+
+    footer {
+      padding: 20px 0; /* เพิ่ม padding ให้กับ footer */
+    }
+  }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
