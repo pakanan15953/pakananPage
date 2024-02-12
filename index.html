@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แนะนำตัว</title>
-    <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My Resume</h1>
-        <a href="mypage.html">Go back to Home</a>
-    </header>
-    
-    <section id="about-me">
-        
-        <p>Personal details</p>
-        <p>Name : Pakanan Tantiwut</p>
-        <p>Gender : Male</p>
-        <p>Date of Birth : 25/07/2001</p>
-        <p>Education Background :</p>
-        <p>Bachelor of Science in Computer Science</p>
-        <p>Thammasat University, Thailand</p>
-        <p>Phone Number : 0924658243</p>
-        <p>Email : gg15953@gmail.com</p>
-    </section>
+        <div class="container"> 
+          <h1></h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">CS369 mypage &#127968</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <Main>
+      
+        <div class="center">
 
-    <section id="media">
-        <h2>รูปภาพ</h2>
-        <img src="images/profile.jpg"width="450" height="500" alt="รูปภาพของฉัน">
-        <img src="images/me.jpg"width="450" height="500" alt="รูปภาพของฉัน">
-    </section>
-    <section id="media">
-        <h2>วิดีโอ(แมวของผม)</h2>
-        <iframe width="450" height="500" src="VDOs/vdo.mp4" frameborder="0" allowfullscreen></iframe>
-    </section>
+          <section>
+            <li><a href="resume.html">Resume &#128100</a></li>
+          </section>
 
-    <footer>
-        <p>Contact : Pakanan.tan@dome.tu.ac.th</p>
-    </footer>
+          <section>
+            <li><a href="showcase.html">Showcase &#128195</a></li>
+          </section>
 
+        </div>
+        <div class="left-column"id="home">
+          <section>
+            <h3>Introduction About Myself</h3>
+            <p>Hello, U can call me glue.</p>
+            <p>I am 22 years old.</p>
+            <p>I am a fourth-year student majoring in Computer Science at Thammasat University.</p>
+            <p>Currently, I am studying computer-related subjects focusing on website and application development.</p>
+            <p>Nice to meet you! &#128512; </p> <!-- ใส่ emoji -->
+          </section>
+          
+        </div>
+        <div class="right-colum">
+          <section>
+            <li><a href="tulife.html">Tu life <img src="images/tu.png" alt="" width="30" height="30"> </a></li>
+          </section>
+        </div>
+
+
+
+
+    </Main>
+  <footer>
+    <div class="container">
+      <h5>Contact : Pakanan.tan@dome.tu.ac.th</h5>
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
